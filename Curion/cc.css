@@ -1,0 +1,48 @@
+.hover-image:hover {
+transform: scale(1.1);
+}
+button {
+    background-color: aquamarine;
+}
+/* --- DESKTOP STYLES (Your current default setup) --- */
+p {
+  font-size: 16px;       /* Standard size for computers */
+  line-height: 1.5;
+}
+h1 {
+  font-size: 32px;
+}
+.hero-image {
+  width: 50%;            /* Takes up half the screen on desktop */
+}
+
+
+/* --- TABLET STYLES (Screens 1024px and smaller) --- */
+@media (max-width: 1024px) {
+  p {
+    font-size: 18px;     /* Bumps up text size for tablets */
+  }
+  h1 {
+    font-size: 36px;     /* Makes headers larger */
+  }
+  .hero-image {
+    width: 80%;          /* Expands image width */
+  }
+}
+
+
+/* --- PHONE STYLES (Screens 768px and smaller) --- */
+@media (max-width: 768px) {
+  p {
+    font-size: 20px;     /* Makes text even larger for easy reading */
+    line-height: 1.6;    /* Adds extra space between lines */
+  }
+  h1 {
+    font-size: 40px;     /* Bold, prominent headers */
+  }
+  .hero-image {
+    width: 100%;         /* Forces image to span full width of the phone */
+    height: auto;        /* Prevents image distortion */
+  }
+}
+

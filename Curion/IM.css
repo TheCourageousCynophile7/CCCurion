@@ -1,0 +1,231 @@
+* -------------------- */
+/* GENERAL */
+/* -------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f1117;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:40px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+/* -------------------- */
+/* TREE */
+/* -------------------- */
+
+.tree,
+.tree ul{
+    list-style:none;
+    margin:0;
+    padding-left:30px;
+    position:relative;
+}
+
+.tree ul{
+    margin-top:10px;
+}
+
+/* Vertical Line */
+
+.tree ul::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    border-left:2px solid #5c5c5c;
+    height:100%;
+}
+
+/* Horizontal Line */
+
+.tree li{
+    position:relative;
+    padding:12px 0 12px 25px;
+}
+
+.tree li::before{
+    content:"";
+    position:absolute;
+    top:28px;
+    left:0;
+    width:25px;
+    border-top:2px solid #5c5c5c;
+}
+
+/* -------------------- */
+/* BUTTONS */
+/* -------------------- */
+
+.toggle{
+
+    display:inline-block;
+
+    cursor:pointer;
+
+    background:#1c2333;
+
+    padding:10px 18px;
+
+    border:1px solid #4b70ff;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+.toggle:hover{
+
+    background:#2c3d66;
+
+}
+
+/* -------------------- */
+/* CONTENT BOX */
+/* -------------------- */
+
+.content{
+
+    display:none;
+
+    margin-top:15px;
+
+    margin-bottom:10px;
+
+    margin-left:15px;
+
+    background:#181818;
+
+    border-left:4px solid #4b70ff;
+
+    padding:18px;
+
+    border-radius:8px;
+
+}
+
+.content h3{
+
+    margin-top:10px;
+
+    color:#6fb3ff;
+
+}
+
+.content p{
+
+    margin:12px 0;
+
+    line-height:1.6;
+
+}
+
+.content ul{
+
+    margin-top:10px;
+
+    padding-left:25px;
+
+}
+
+.content li{
+
+    padding:6px 0;
+
+}
+
+/* -------------------- */
+/* OPEN STATE */
+/* -------------------- */
+
+.active{
+
+    background:#4b70ff;
+
+    color:white;
+
+}
+
+/* -------------------- */
+/* SCROLLBAR */
+/* -------------------- */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#555;
+
+    border-radius:5px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#888;
+
+}
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
+
+@media(max-width:768px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+    .toggle{
+
+        font-size:16px;
+
+        padding:8px 14px;
+
+    }
+
+    .content{
+
+        padding:15px;
+
+    }
+
+}
