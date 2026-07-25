@@ -74,4 +74,9 @@ justify-content: center;
         height: 300px;
         width:800px;
     }
+    #A {
+        display: inline-block;
+        height: 300px;
+        width: 800px;
+    }
 }
