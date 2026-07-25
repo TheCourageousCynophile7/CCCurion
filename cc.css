@@ -45,4 +45,14 @@ h1 {
     height: auto;        /* Prevents image distortion */
   }
 }
-
+.hover-image {
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+@media(maxwidth:768px) {
+    .hover-image {
+        flex-direction: column;
+        align-items: center;
+    }
+}
