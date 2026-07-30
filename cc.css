@@ -93,4 +93,10 @@ justify-content: center;
         width: 100%;
         height: auto;
     }
+    #bg {
+        padding-left: 15px;
+        height: 400px;
+        width: 100%;
+    }
+}
 }
